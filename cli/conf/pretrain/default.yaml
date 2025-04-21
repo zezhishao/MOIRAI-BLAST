@@ -2,10 +2,9 @@ hydra:
   run:
     dir: outputs/pretrain/${hydra:runtime.choices.model}/${hydra:runtime.choices.data}/${run_name}
 defaults:
-  - model: moirai_base
-  - data: blastv2
-  # - data: blastv2_womixup
-  # - data: lotsa_v1_unweighted
+  # - model: moirai_base # train moirai_base
+  - model: moirai_large # train moirai_large
+  - data: blast
   - val_data: null
   - _self_
 run_name: first_run
