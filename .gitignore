@@ -8,6 +8,7 @@ outputs/
 temp_parquet_chunks_nomixuo/
 temp_parquet_chunks/
 preprocess_data/raw_blast
+.vscode/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
